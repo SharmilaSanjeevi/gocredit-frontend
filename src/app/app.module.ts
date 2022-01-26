@@ -11,6 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './components/footer/footer.component';
+import { CreditCardsComponent } from './components/credit-cards/credit-cards.component';
+import { BillsComponent } from './components/bills/bills.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +26,13 @@ import { HttpClientModule } from '@angular/common/http';
     LoginComponent,
     HomeComponent,
     AdminComponent,
+    FooterComponent,
+    CreditCardsComponent,
+    BillsComponent,
+    PageNotFoundComponent,
+    AboutUsComponent,
+    ContactComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

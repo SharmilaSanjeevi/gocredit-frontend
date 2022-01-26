@@ -9,10 +9,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
 
-
-
 @NgModule({
-  declarations: [],
   imports: [
     CommonModule,
     MatToolbarModule,
@@ -22,10 +19,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatButtonModule,
     MatSelectModule,
     MatCardModule,
-    MatTabsModule
-
+    MatTabsModule,
   ],
-  exports:[
+  exports: [
     MatToolbarModule,
     MatIconModule,
     MatInputModule,
@@ -33,8 +29,7 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatButtonModule,
     MatSelectModule,
     MatCardModule,
-    MatTabsModule
-
-  ]
+    MatTabsModule,
+  ],
 })
-export class MaterialModule { }
+export class MaterialModule {}
