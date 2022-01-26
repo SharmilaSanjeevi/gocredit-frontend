@@ -4,19 +4,20 @@ import { Observable } from 'rxjs';
 import { User } from '../models/user';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UserService {
+  private baseUrl = 'http://localhost:8081/user-api/users';
 
-  private _baseUrl='http://localhost:8081/user-api/users'
-  constructor(private _http:HttpClient) { }
+  constructor(private http: HttpClient) {}
 
-  loginWithEmail=(email:string,password:string):Observable<User>=>{
-    let url=`${this._baseUrl}/login/email/${email}/password/${password}`;
-    return this._http.get<User>(url);
-  }
-  loginWithContact=(contact:number,password:string):Observable<User>=>{
-    let url=`${this._baseUrl}/login/contact/${contact}/password/${password}`;
-    return this._http.get<User>(url);
-  }
+  loginWithEmail = (email: string, password: string): Observable<User> => {
+    let url = `${this.baseUrl}/login/email/${email}/password/${password}`;
+    return this.http.post<User>(url, {});
+  };
+
+  loginWithContact = (contact: number, password: string): Observable<User> => {
+    let url = `${this.baseUrl}/login/contact/${contact}/password/${password}`;
+    return this.http.post<User>(url, {});
+  };
 }
