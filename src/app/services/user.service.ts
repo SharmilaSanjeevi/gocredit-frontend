@@ -20,4 +20,9 @@ export class UserService {
     let url = `${this.baseUrl}/login/contact/${contact}/password/${password}`;
     return this.http.post<User>(url, {});
   };
+
+  getUserById = (id: number): Observable<User> => {
+    let url = `${this.baseUrl}/id/${id}`;
+    return this.http.get<User>(url);
+  };
 }

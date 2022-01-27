@@ -8,6 +8,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCardModule } from '@angular/material/card';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatTableModule } from '@angular/material/table';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   imports: [
@@ -20,6 +22,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatSelectModule,
     MatCardModule,
     MatTabsModule,
+    MatTableModule,
+    MatDividerModule,
   ],
   exports: [
     MatToolbarModule,
@@ -30,6 +34,8 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatSelectModule,
     MatCardModule,
     MatTabsModule,
+    MatTableModule,
+    MatDividerModule,
   ],
 })
 export class MaterialModule {}
