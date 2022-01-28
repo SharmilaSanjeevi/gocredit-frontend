@@ -21,8 +21,15 @@ export class UserService {
     return this.http.post<User>(url, {});
   };
 
+<<<<<<< HEAD
   showUsers=():Observable<User[]>=>{
     let url = `${this.baseUrl}/users`;
     return this.http.get<User[]>(url);
   }
+=======
+  getUserById = (id: number): Observable<User> => {
+    let url = `${this.baseUrl}/id/${id}`;
+    return this.http.get<User>(url);
+  };
+>>>>>>> 71665e0a363c07f5f8bc5bc1be4e56f14a4c3e8a
 }
