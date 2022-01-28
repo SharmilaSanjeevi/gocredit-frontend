@@ -18,6 +18,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { UsersComponent } from './components/users/users.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     PageNotFoundComponent,
     AboutUsComponent,
     ContactComponent,
-    ProfileComponent
+    ProfileComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
